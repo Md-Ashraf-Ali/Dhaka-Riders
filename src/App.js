@@ -13,9 +13,11 @@ import Destination from './Components/Destination/Destination';
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import image from './images/Dhaka Riders.png'
+import Login from './Components/Login/Login';
 
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
@@ -37,6 +39,9 @@ function App() {
               <li>
                 <Link to="/Contact">Contact</Link>
               </li>
+              <li>
+                <Link to="/Login">Login</Link>
+              </li>
             </ul>
           </div>
           {/* A <Switch> looks through its children <Route>s and
@@ -53,6 +58,9 @@ function App() {
             </Route>
             <Route path="/Contact">
               <Contact/>
+            </Route>
+            <Route path="/Login">
+              <Login/>
             </Route>
             <Route path="/">
               <Home/>
